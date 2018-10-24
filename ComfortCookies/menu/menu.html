@@ -1,171 +1,79 @@
 <!DOCTYPE html> 
 <html>
-<head>
-<title>Store</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<style type="text/css">
-   
-   section
-   {
-       margin-left: 220px;
-       border: black;
-   }
-   
-   .store 
-   {
-       border: solid 1px black;
-   }
-   
-   .item 
-   {
-       width: 200px;
-       height: 200px;
-   }
-   
-   header 
-   {
-       background-color: darkgrey;
-       padding: 10px 0;
-       margin-top: 20px;
-       color: darkblue;
-       border: solid 3px black;
-   } 
-   
-   footer 
-   {
-       background-color: darkgrey;
-       padding: 10px 0;
-       margin-top: 20px;
-       color: darkblue;
-       border: solid 3px black;
-   }
-   .footer ul 
-    {
-        list-style: none;
-		padding:0;
-    }
-    .footer li 
-    {
-		position: relative;
-		display: inline-block;
-		
-		background-color: lightgrey;
-		color: white;
-		padding: 10px;
-		font-size: 16px;
-		border: solid 1px black;
-		cursor: pointer;
-		margin: 10px;
-    }
-   
-    .navbar ul 
-    {
-        list-style: none;
-		padding:0;
-    }
-    .navbar li 
-    {
-		position: relative;
-		display: inline-block;
-		
-		background-color: lightgrey;
-		color: white;
-		padding: 10px;
-		font-size: 16px;
-		border: solid 1px black;
-		cursor: pointer;
-		margin: 10px;
-    }
-    
-    .filter 
-   {
-       background-color: lightgrey;
-       border: solid 2px black;
-       width: 200px;
-       float: left;
-       text-align: center;
-       margin: 10px;
-       
-   }
-   .filter ul 
-   {
-       list-style: none;
-       padding-left: 0;
-       
-   }
-   .filter a 
-   {
-       display: block;
-       padding: 10px;
-       text-align: center;
-       text-decoration: none;
-       color: black;
-       
-   }
-   .filter a:hover 
-   {
-       
-       color: white;
-       
-   }
-   
-</style>
-</head>
-<body>
-<div id="wrapper">
-
-<header>
-    <nav class="navbar">
-    <ul class="navigation">
-  <li><a href="">Logo</a></li>
-  <li><a href="">Store</a></li>
-  <li><a href="">Shipping</a></li>
-  <li><a href="">Shopping Cart</a></li>
-</ul>
-</nav>
-</header>
-
-<nav class="filter"><h2>Filter</h2>
-<ul>
-<li><a href="url">Category</a></li>
-<li><a href="url">Price</a></li>
-<li><a href="url">Alphabetical</a></li>
-</ul>
-</nav>
-
-<section>
-<h2 class="products">Products</h2>
-<div class="store">
-    <img src="image.gif" alt="Your Name" class="item">
-    <img src="image.gif" alt="Your Name" class="item">
-    <img src="image.gif" alt="Your Name" class="item">
-    <img src="image.gif" alt="Your Name" class="item">
-    <img src="image.gif" alt="Your Name" class="item">
-    <img src="image.gif" alt="Your Name" class="item">
-    <img src="image.gif" alt="Your Name" class="item">
-    <img src="image.gif" alt="Your Name" class="item">
-</div>
-</section>
-<div>
-<footer class="footer"><h2 class="title"></h2>
+  <head>
+    <title>Store</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Comfort Cookies</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Fredoka+One" rel="stylesheet">
+    <link rel="stylesheet" href="../CookiesStyleSheet.css"/>
+  </head>
+  <body>
+    <header>
+      <h1>Comfort Cookies</h1>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <span class="dropbtn">Menu</span>
+              <ul class="dropdown-content">
+                <li><a href="#">Main Menu</a></li>
+            	  <li><a href="#">Accessories</a></li>
+            	  <li><a href="#">Catering</a></li>
+            	  <li><a href="#">Ingredients</a></li>
+            	  <li><a href="#">Pre-made Cookies</a></li>
+              </ul>
+          </li>
+        	<li class="dropdown">
+            <span class="dropbtn"><a href="#">Tracking</a></span>
+        	</li>
+        	<li class="dropdown">
+      	    <a href=""><img src="" alt="Shopping"></a>
+        	</li>
+        </ul>
+    	</nav>
+    </header>
+    <nav class="filter"><h2>Filter</h2>
     <ul>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="FQ.html">FAQ</a></li>
-        <li><a href="accessibility.html">Accessibility</a></li>
-        <li><a href="priv_policy.html">Privacy</a></li>
-        <li><a href="term_cond.html">Terms/Conditions</a></li>
-        <li><a href="contact.html">Contact</a></li>
+    <li><a href="url">Category</a></li>
+    <li><a href="url">Price</a></li>
+    <li><a href="url">Alphabetical</a></li>
     </ul>
-    
-    <ul>
-      <li><a href="https://www.facebook.com/">
-        <img src="facebook.png" alt="facebook" style="width:42px;height:42px;border:0;">
-      </a></li>
-      <li><a href="https://twitter.com/?lang=en">
-        <img src="facebook.png" alt="facebook" style="width:42px;height:42px;border:0;">
-    </ul>
-</footer>
-</div>
-
-</body>
+    </nav>
+    <section>
+    <h2 class="products">Products</h2>
+    <div class="store">
+      <img src="image.gif" alt="Your Name" class="item">
+      <img src="image.gif" alt="Your Name" class="item">
+      <img src="image.gif" alt="Your Name" class="item">
+      <img src="image.gif" alt="Your Name" class="item">
+      <img src="image.gif" alt="Your Name" class="item">
+      <img src="image.gif" alt="Your Name" class="item">
+      <img src="image.gif" alt="Your Name" class="item">
+      <img src="image.gif" alt="Your Name" class="item">
+    </div>
+    </section>
+    <div>
+      <footer class="footer"><h2 class="title"></h2>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="FQ.html">FAQ</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="priv_policy.html">Privacy</a></li>
+          <li><a href="term_cond.html">Terms/Conditions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul>
+          <li><a href="https://www.facebook.com/">
+            <img src="../images/facebook.png" alt="facebook" style="width:24px;height:24px;border:0;">
+          </a></li>
+          <li><a href="https://twitter.com/?lang=en">
+            <img src="../images/twitter.png" alt="twitter" style="width:24px;height:24px;border:0;">
+          </a></li>
+          <li><a href="https://www.instagram.com/">
+            <img src="../images/instagram.png" alt="instagram" style="width:24px;height:24px;border:0;">
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
 </html>
