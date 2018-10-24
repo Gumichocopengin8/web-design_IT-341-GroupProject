@@ -1,0 +1,14 @@
+h1 {
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Didact Gothic', sans-serif;
+    line-height: 1.5;
+}
