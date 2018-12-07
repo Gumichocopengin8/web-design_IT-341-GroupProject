@@ -6,9 +6,38 @@
     <title>Comfort Cookies</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Fredoka+One" rel="stylesheet">
-    <link rel="stylesheet" href="../CookiesStyleSheet.css"/>
+    <link rel="stylesheet" href="../css/foundation.css"/>
+    <link rel="stylesheet" href="../css/CookiesStyleSheet.css"/>
   </head>
   <body>
+    
+    <header>
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text"><img src="../images/cc-logo-long.png" alt="Comfort Cookies Logo">
+          </li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="has-submenu">
+            <a href="#0">Menu</a>
+            <ul class="submenu menu vertical" data-submenu>
+              <li><a href="#0">Main Menu</a></li>
+              <li><a href="#0">Accessories</a></li>
+              <li><a href="#0">Catering</a></li>
+              <li><a href="#0">Ingredients</a></li>
+              <li><a href="#0">Pre-made Cookies</a></li>
+
+            </ul>
+          </li>
+          <li><a href="#0">Tracking</a></li>
+          <li><a href="#0">Shopping</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--
     <header>
       <h1>Comfort Cookies</h1>
       <nav>
@@ -32,24 +61,31 @@
         </ul>
     	</nav>
     </header>
-    <nav class="filter"><h2>Filter</h2>
-    <ul>
-    <li><a href="url">Category</a></li>
-    <li><a href="url">Price</a></li>
-    <li><a href="url">Alphabetical</a></li>
-    </ul>
+    -->
+    <nav class="filter"><h3>Filter</h3>
+      <ul class="vertical menu">
+        <li><a href="url">Category</a></li>
+        <li><a href="url">Price</a></li>
+        <li><a href="url">Alphabetical</a></li>
+      </ul>
     </nav>
     <section>
     <h2 class="products">Products</h2>
-    <div class="store">
-      <img src="image.gif" alt="Your Name" class="item">
-      <img src="image.gif" alt="Your Name" class="item">
-      <img src="image.gif" alt="Your Name" class="item">
-      <img src="image.gif" alt="Your Name" class="item">
-      <img src="image.gif" alt="Your Name" class="item">
-      <img src="image.gif" alt="Your Name" class="item">
-      <img src="image.gif" alt="Your Name" class="item">
-      <img src="image.gif" alt="Your Name" class="item">
+    <div class="row">
+      <div class="columns medium">
+        <img src="image.gif" alt="Your Name" class="item">
+        <img src="image.gif" alt="Your Name" class="item">
+        <img src="image.gif" alt="Your Name" class="item">
+      </div>
+      <div class="columns medium">
+        <img src="image.gif" alt="Your Name" class="item">
+        <img src="image.gif" alt="Your Name" class="item">
+        <img src="image.gif" alt="Your Name" class="item">
+      </div>
+      <div class="columns medium">
+        <img src="image.gif" alt="Your Name" class="item">
+        <img src="image.gif" alt="Your Name" class="item">
+      </div>
     </div>
     </section>
     <div>
@@ -75,5 +111,11 @@
         </ul>
       </footer>
     </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/what-input.js"></script>
+    <script src="../js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
   </body>
 </html>
