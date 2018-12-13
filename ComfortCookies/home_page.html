@@ -4,113 +4,217 @@
 <head>
   <title>Comfort Cookies</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Fredoka+One" rel="stylesheet">
   <link rel="stylesheet" href="css/foundation.css" />
-  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="foundation-icons/foundation-icons.css" />
   <link rel="stylesheet" href="css/CookiesStyleSheet.css" />
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Fredoka+One" rel="stylesheet">
+  
+  <style>
+  </style>
 </head>
 
 <body>
   <header>
+    <!--Top Bar-->
     <div class="top-bar">
+      <!--Left Side of Top Bar-->
       <div class="top-bar-left">
-        <ul class="menu">
-          <li class="menu-text"><img src="images/cc-logo-long.png" alt="Comfort Cookies Logo">
-          </li>
+        <ul class="top-bar-title">
+          <li class="show-for-large"><a href="home_page.html"><img src="images/cc-logo-long.svg" alt="Comfort Cookies Logo" width=50%></a></li>
         </ul>
+        <!--Dropdown Button (Mobile)-->
+        <div data-responsive-toggle="example-menu" data-hide-for="large">
+          <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+        </div>
       </div>
+      <!--Right Side of Top Bar-->
       <div class="top-bar-right">
-        <ul class="dropdown menu" data-dropdown-menu>
+        <ul class="dropdown menu show-for-large" data-dropdown-menu>
           <li class="has-submenu">
-            <a href="#0">Menu</a>
+            <a href="menu/menu.html">
+              <h3>Menu</h3>
+            </a>
             <ul class="submenu menu vertical" data-submenu>
-              <li><a href="#0">Main Menu</a></li>
-              <li><a href="#0">Accessories</a></li>
-              <li><a href="#0">Catering</a></li>
-              <li><a href="#0">Ingredients</a></li>
-              <li><a href="#0">Pre-made Cookies</a></li>
-
+              <li><a href="menu/menu.html">Main Menu</a></li>
+              <li><a href="menu/accessories.html">Accessories</a></li>
+              <li><a href="menu/catering.html">Catering</a></li>
+              <li><a href="menu/ingredients.html">Ingredients</a></li>
+              <li><a href="menu/premade_cookies.html">Pre-made Cookies</a></li>
             </ul>
           </li>
-          <li><a href="#0">Tracking</a></li>
-          <li><a href="#0">Shopping</a></li>
+          <li>
+            <a href="tracking/tracking.html">
+              <h3>Tracking</h3>
+            </a>
+          </li>
+          <li>
+            <a href="shopping/shopping_cart.html">
+              <h3>Shopping Cart</h3>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="menu align-center hide-for-large"><a href="home_page.html"><img src="images/cc-logo-long.svg" alt="Comfort Cookies Logo" width=100%></a></li>
         </ul>
       </div>
-    </div>
-    <!--
-      <nav>
-        <h1>Comfort Cookies</h1>
-        <ul>
-          <li class="dropdown">
-            <span class="dropbtn">Menu</span>
-            <ul class="dropdown-content">
-              <li><a href="#">Main Menu</a></li>
-          	  <li><a href="#">Accessories</a></li>
-          	  <li><a href="#">Catering</a></li>
-          	  <li><a href="#">Ingredients</a></li>
-          	  <li><a href="#">Pre-made Cookies</a></li>
+      <!--Dropdown for Mobile-->
+      <div class="top-bar hide-for-medium" id="example-menu" data-animate="hinge-in-from-top hinge-out-from-top">
+        <div class="top-bar-left">
+          <div class="grid-x grid-margin-x text-center">
+            <div class="cell small-4">
+              <a href="menu/menu.html">
+                <img src="images/menu.svg" alt="Menu" width=26%>
+                <h2>Menu</h2>
+              </a>
+            </div>
+            <div class="cell auto">
+              <a href="tracking/tracking.html">
+                <img src="images/orderstep2.svg" alt="Menu" width=55%>
+                <h2>Tracking</h2>
+              </a>
+            </div>
+            <div class="cell auto">
+              <a href="shopping/shopping_cart.html">
+                <img src="images/shopping-cart.svg" alt="Menu" width=38%>
+                <h2>Cart</h2>
+              </a>
+            </div>
             </ul>
-          </li>
-        	<li class="dropdown">
-            <span class="dropbtn"><a href="#">Tracking</a></span>
-        	</li>
-        	<li class="dropdown">
-    	      <a href=""><img src="" alt="Shopping"></a>
-        	</li>
-        </ul>
-  	  </nav>
-  	  -->
+          </div>
+        </div>
+      </div>
   </header>
-  <div>
-    <h2>Current Promos</h2>
-    <p>insert banner image here</p>
-  </div>
-  <div>
-    <h2>Order Now</h2>
-    <div>
-      <img src="" alt="step1">
-      <p>>Insert Step descriptor here</p>
-    </div>
-    <div>
-      <img src="" alt="step1">
-      <p>>Insert Step descriptor here</p>
-    </div>
-    <div>
-      <img src="" alt="step1">
-      <p>>Insert Step descriptor here</p>
-    </div>
-    <div>
-      <h2>Email Sign-up: </h2>
-      <input type="text" placeholder="Enter email">
+
+
+  <!--Promo Hero Banner-->
+  <div class="promo-hero promo-hero-bg-image">
+    <div class="promo-hero-content">
+      <h1 class="promo-hero-title">Make a special, warm and chewey, delivery.</h1>
+      <p class="promo-hero-description hide-for-small-only">The #1 destination for ordering freshly baked cookies to your apartment in minutes.</p>
+      <div class="promo-hero-ctas">
+        <a href="menu/menu.html" class="promo-section-cta button primary">Place An Order</a>
+      </div>
     </div>
   </div>
-  <footer class="footer">
-    <h2 class="title"></h2>
-    <ul>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="FQ.html">FAQ</a></li>
-      <li><a href="accessibility.html">Accessibility</a></li>
-      <li><a href="priv_policy.html">Privacy</a></li>
-      <li><a href="term_cond.html">Terms/Conditions</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <ul>
-      <li><a href="https://www.facebook.com/">
-          <img src="./images/facebook.png" alt="facebook" style="width:24px;height:24px;border:0;">
-        </a></li>
-      <li><a href="https://twitter.com/?lang=en">
-          <img src="./images/twitter.png" alt="twitter" style="width:24px;height:24px;border:0;">
-          </a></li>
-      <li><a href="https://www.instagram.com/">
-          <img src="./images/instagram.png" alt="instagram" style="width:24px;height:24px;border:0;">
-      </ul>
-    </footer>
-    
-      <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
+
+
+
+  <!--Three Step Iconography-->
+  <div class="grid-container" style="padding-top:2rem;">
+    <div class="grid-x grid-margin-x text-center">
+      <h2 class="cell small-4">Shop</h2>
+      <h2 class="cell small-4">Deliver</h2>
+      <h2 class="cell small-4">Munch</h2>
+    </div>
+    <div class="grid-x grid-margin-x grid-padding-x text-center">
+      <div class="cell small-4">
+        <img src="images/orderstep1.png" style="width: 50%;" alt="step 1">
+        <p>Browse through our menu of cookies and other various cookie accessories.</p>
+      </div>
+      <div class="cell auto">
+        <img src="images/orderstep2.png" style="width: 50%;" alt="step 2">
+        <p>Hang on in there while you wait for your freshly-baked cookies to arrive.</p>
+      </div>
+      <div class="cell auto">
+        <img src="images/orderstep3.png" style="width: 50%;" alt="step 3">
+        <p>Kick back and munch on those warm, comforting cookies. Repeat the steps as necessary.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--Email Signup-->
+  <div class="brown-bg">
+    <div class="grid-x grid-container" style="padding: 5rem;">
+      <div class="cell">
+        <h1 class="text-centered">Sign-up for our Newsletter </h1>
+        <input type="text" placeholder="Enter email">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- https://foundation.zurb.com/building-blocks/blocks/marketing-site-footer.html -->
+
+  <footer class="marketing-site-footer">
+    <div class="row medium-unstack">
+      <div class="grid-x">
+        <div class="cell medium-4">
+          <h4 class="marketing-site-footer-name">Comfort Cookies</h4>
+          <p>Our goal is to produce the best quality cookies you can order online.</p>
+          <ul class="menu marketing-site-footer-menu-social simple">
+            <li><a href="#"><i class="fi-social-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fi-social-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fi-social-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <div class="cell medium-4">
+          <h4 class="marketing-site-footer-title">Contact Info</h4>
+          <div class="marketing-site-footer-block">
+            <i class="fi-marker" aria-hidden="true"></i>
+            <p>1800 Moore St.<br>Huntingdon, PA 16652</p>
+          </div>
+          <div class="marketing-site-footer-block">
+            <i class="fi-telephone" aria-hidden="true"></i>
+            <p>1 (800) 555-5555</p>
+          </div>
+          <div class="marketing-site-footer-block">
+            <i class="fi-mail" aria-hidden="true"></i>
+            <p>comfortcookies@fakeemail.com</p>
+          </div>
+        </div>
+        <div class="cell medium-4">
+          <h4 class="marketing-site-footer-title">Instagram</h4>
+          <div class="grid-x grid-padding-x small-up-3">
+            <!--row small-up-3 -->
+            <div class="cell">
+              <img src="images/cookie1.jpg" alt="" />
+            </div>
+            <div class="cell">
+              <img src="images/cookie10.jpg" alt="" />
+            </div>
+            <div class="cell">
+              <img src="images/cookie7.jpg" alt="" />
+            </div>
+            <div class="cell">
+              <img src="images/cookie15.jpg" style="margin-top:10px" alt="" />
+            </div>
+            <div class="cell">
+              <img src="images/cookie3.jpg" style="margin-top:10px" alt="" />
+            </div>
+            <div class="cell">
+              <img src="images/cookie2.jpg" style="margin-top:10px" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="marketing-site-footer-bottom">
+      <div class="grid-x">
+        <!-- row large-unstack align-middle -->
+        <div class="cell large-6">
+          <p>&copy; 2018 No rights reserved</p>
+        </div>
+        <div class="cell large-6">
+          <ul class="menu marketing-site-footer-bottom-links">
+            <li><a href="home_page.html">Home</a></li>
+            <li><a href="footer/about.html">About</a></li>
+            <li><a href="footer/FAQ.html">FAQ</a></li>
+            <li><a href="footer/accessibility.html">Accessibility</a></li>
+            <li><a href="footer/priv_policy.html">Privacy</a></li>
+            <li><a href="footer/term_cond.html">Terms/Conditons</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+
 </html>

@@ -8,7 +8,36 @@ h2 {
     font-weight: bold;
 }
 
+h3 {
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bold;
+}
+
 p {
     font-family: 'Didact Gothic', sans-serif;
     line-height: 1.5;
 }
+.item {
+    width: 250px;
+    height: 250px;
+}
+.fi-mail, .fi-marker, .fi-telephone
+  {
+    font-size:32px;
+  }
+.fi-social-facebook, .fi-social-instagram, .fi-social-twitter
+  {
+    font-size:32px;
+  }
+  .marketing-site-footer
+  {
+    background-color: #523a34;
+  }
+  .submenu 
+  { 
+    z-index: 999; 
+  }
+  .top-bar a 
+  { 
+    background-color: #fff !important; 
+  }
